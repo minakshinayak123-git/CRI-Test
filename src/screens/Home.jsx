@@ -23,7 +23,8 @@ const Home = () => {
           </li>
           <li>C.R.I. is the highest contributor in the country for the projects of EESL (Energy Efficiency Services Limited) to replace the old inefficient pumps with 5 Star rated energy efficient smart pumps with IoT enabled control panel. </li>
         </ul>
-      <img src={home2} alt='home2'/>
+        <div className="imageContent"> <img src={home2} alt='home2'/></div>
+     
       <p>
       Government of India has awarded the "National Energy Conservation Award 2018". Mr. G. Selvaraj, Joint Managing Director of C.R.I. Group received the award from Smt. Sumitra Mahajan, Speaker of Lok Sabha & Shri. Raj Kumar Singh, Honorable Minister of State.
       </p>
@@ -32,7 +33,10 @@ const Home = () => {
       </div>
       <div className="bottomContent">
         <h4>INSTALLED OVER 10 LAKHS STAR RATED PUMPSETS ACROSS THE COUNTRY RESULTING IN A CUMULATIVE SAVING OF MORE THAN 9,000 MILLION UNITS OF POWER FOR THE NATION. </h4>
-      <img src={home3} alt='home3'/>
+        <div className="imageContent">
+        <img src={home3} alt='home3'/>
+        </div>
+      
       <p>Valves - Pumps - Pipes - IoT Drives & Controllers - Wires & Cables - Solar Systems - Motors </p>
 
       </div>
@@ -42,7 +46,7 @@ const Home = () => {
 
         {
           strArr.map(word=>(
-            <span key={word}>{`${word} | `}</span>
+            <span key={word}>{`${word} `}</span>
             ))
           }
         </div>
